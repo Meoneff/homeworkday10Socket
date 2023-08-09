@@ -1,0 +1,117 @@
+/* Định dạng chung cho toàn bộ khung chat */
+.chat-container {
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+#ten_top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    img{
+        border-radius: 50%;
+        width: auto;
+        height: 80px;
+      }
+      h1{
+        margin-left: 40px;
+      }
+}
+
+  
+  /* Định dạng cho các input và button */
+  input[type="text"], button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Định dạng cho các tin nhắn */
+  .message {
+    margin: 10px 0;
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .message-entry {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  word-wrap: break-word;
+  border: 2px dotted black
+}
+
+/* Chỉnh dạng cho thông tin người gửi */
+.message-from {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Chỉnh dạng cho nội dung tin nhắn */
+.message-content {
+  margin-top: 5px;
+}
+
+/* Tạo hiệu ứng nhấp nháy khi di chuột qua tin nhắn */
+.message-entry:hover {
+  background-color: #e0e0e0;
+}
+  
+  /* Định dạng cho thông tin người gửi */
+  .message p:first-child {
+    font-weight: bold;
+  }
+  
+  /* Định dạng cho nội dung tin nhắn */
+  .message p:last-child {
+    margin-top: 5px;
+  }
+  
+  /* Định dạng cho ô nhập tin nhắn và nút Send */
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        width: 80%;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px 10px;
+    }
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    margin-right: 5px;
+  }
+  
+  /* Định dạng cho nút Send */
+  .send-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
